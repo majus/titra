@@ -1,0 +1,7 @@
+<template name="connectioncheck">
+  {{#if offline}}
+  <div class="alert alert-warning text-center" style="margin-top:-1.5rem;">
+    {{t "notifications.connectioncheck"}} {{nextRetry}} ... <a href="#" id="connectButton" class="alert-link">{{t "navigation.retry"}}</a>
+  </div>
+  {{/if}}
+</template>

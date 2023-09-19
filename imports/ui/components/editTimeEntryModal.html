@@ -1,0 +1,22 @@
+<template name="editTimeEntryModal">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="edit-tc-entry-modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-l" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">
+                {{#if isEdit}}  
+                    {{t "navigation.edit"}}
+                {{/if}}
+                {{#if isNewEntry}}
+                    {{t "navigation.track"}}
+                {{/if}}
+                </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body" id="editTimeEntryModalBody">
+            </div>
+          </div>
+        </div>
+      </div>
+</template>

@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "gcp-build": "cd programs/server && npm install"
+  }
+}
